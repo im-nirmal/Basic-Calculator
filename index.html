@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <!-- readonly used to not input from keyboard -->
+            <input type="text" name="" id="result"  placeholder="0" style="font-size: 50px;" readonly>
+        </div>
+        <div class="group">
+            <button id="left-paranth" onclick="displayContent('(')">(</button>
+            <button id="right-paranth" onclick="displayContent(')')">)</button>
+            <button id="back" onclick="backspace()"> B </button>
+            <button id="div" onclick="displayContent('/')" class="arith">/</button>
+        </div>
+        <div class="group">
+            <button id="seven" onclick="displayContent('7')">7</button>
+            <button id="eight" onclick="displayContent('8')">8</button>
+            <button id="nine" onclick="displayContent('9')">9</button>
+            <button id="mul" class="arith" onclick="displayContent('*')">*</button>
+        </div>
+        <div class="group">
+            <button id="four" onclick="displayContent('4')">4</button>
+            <button id="five" onclick="displayContent('5')">5</button>
+            <button id="six" onclick="displayContent('6')">6</button>
+            <button id="minus" class="arith" onclick="displayContent('-')">-</button>
+        </div>
+        <div class="group">
+            <button id="one" onclick="displayContent('1')">1</button>
+            <button id="two" onclick="displayContent('2')">2</button>
+            <button id="three" onclick="displayContent('3')">3</button>
+            <button id="plus" class="arith" onclick="displayContent('+')">+</button>
+        </div>
+        <div class="group">
+            <button id="zero" onclick="displayContent('0')">0</button>
+            <button id="decimal" onclick="displayContent('.')">.</button>
+            <button id="clear" onclick="clearScreen()">AC</button>
+            <button id="equal" class="equalTo" onclick="finalOutput()">=</button>
+        </div>
+
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
